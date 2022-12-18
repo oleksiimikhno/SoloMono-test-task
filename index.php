@@ -158,7 +158,12 @@
 									<label for="placeholder">Placeholder </label><input type="text" id="placeholder">
 								</div>
 								<div class="input-group">
-									<label for="checkbox">Required </label><input type="checkbox" id="checkbox"/>
+									<label for="checkbox" class="checkbox-group">Required 
+										<div class="custom-checkbox">
+												<input type="checkbox" id="checkbox"/> 
+												<span class="checker"></span>
+										</div>
+									</label>
 								</div>
 							</div>
 						</div>
