@@ -51,6 +51,10 @@
       .dropdown.open .caret {
         transform: rotate(0deg);
       }
+      .category {
+        max-width: 95%;
+        z-index: -1;
+      }
 
       .dropdown-menu li a {
         overflow: hidden;
@@ -65,7 +69,7 @@
       .sub-menu {
         display: block;
         top: -5px;
-        left: 178px;
+        left: 148px;
         opacity: 0;
         visibility: hidden;
         transition: all .3s;
@@ -81,7 +85,7 @@
 
       .sub-category:hover > .sub-menu {
         display: block;
-        left: 188px;
+        left: 158px;
         visibility: visible;
         opacity: 1;
       }
@@ -102,6 +106,7 @@
         visibility: visible;
         opacity: 1;
         transition: opacity 0.3s ease-out, top 0.3s;
+        z-index: 1;
       }
 
       .form {
