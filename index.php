@@ -82,24 +82,49 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse">
 		      <ul class="nav navbar-nav">
-		        <li><a href="#">Кабінет</a></li>
-		        <li class="dropdown open">
+		        <li class="dropdown cabinet"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Кабінет</a>
+							<ul class="dropdown-menu">
+								<li>
+									<form class="form" action="">
+										<div class="wrapper">
+											<div class="form-header"><a href=""><span>First Name</span></a> <a href="">Settings</a></div>
+											<div class="form-body">
+												<div class="input-group">
+													<label for="label">Label </label><input type="text" id="label" value="First Name">
+												</div>
+												<div class="input-group">
+													<label for="placeholder">Placeholder </label><input type="text" id="placeholder">
+												</div>
+												<div class="input-group">
+													<label for="checkbox" class="checkbox-group">Required 
+														<div class="custom-checkbox">
+																<input type="checkbox" id="checkbox"/> 
+																<span class="checker"></span>
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+									</form>
+								</li>
+							</ul>
+					</li>
+		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Категорії <span class="caret"></span></a>
 		          <ul class="dropdown-menu category">
-							<?php foreach ($categories as $key => $category) { ?>
-								<?php if ($key == 2) { ?>
-									<li class="sub-category"><a href="#"><span><?php echo $category; ?></span><span class="caret"></span></a>
-										<ul class="dropdown-menu sub-menu">
-											<?php foreach ($sub_categories as $key => $sub_category) { ?>
-												<li><a href="#"><?php echo $sub_category; ?></a></li>
-											<?php } ?>
-										</ul>
-									</li>
-								<?php } else { ?>
-									<li><a href="#"><?php echo $category; ?></a></li>
+								<?php foreach ($categories as $key => $category) { ?>
+									<?php if ($key == 2) { ?>
+										<li class="sub-category"><a href="#"><span><?php echo $category; ?></span><span class="caret"></span></a>
+											<ul class="dropdown-menu sub-menu">
+												<?php foreach ($sub_categories as $key => $sub_category) { ?>
+													<li><a href="#"><?php echo $sub_category; ?></a></li>
+												<?php } ?>
+											</ul>
+										</li>
+									<?php } else { ?>
+										<li><a href="#"><?php echo $category; ?></a></li>
+									<?php } ?>
 								<?php } ?>
-							<?php } ?>
-
 		          </ul>
 		        </li>
 						<li><a href="test20html.php?download=true"><u>Завантажити <b>test20html.php</b></u></a></li>

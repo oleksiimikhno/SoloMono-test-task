@@ -22,10 +22,10 @@
 
 .sub-menu {
   display: block;
-  opacity: 0;
-  visibility: hidden;
   top: -5px;
   left: 178px;
+  opacity: 0;
+  visibility: hidden;
   transition: all .3s;
 }
 
@@ -36,11 +36,30 @@
 .sub-category:hover .caret{
   transform: rotate(-90deg);
 }
+
 .sub-category:hover > .sub-menu {
   display: block;
   left: 188px;
   visibility: visible;
   opacity: 1;
+}
+
+.cabinet .dropdown-menu {
+  display: block;
+  width: 100px;
+  top: 60%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cabinet:hover .dropdown-menu, .cabinet.open .dropdown-menu {
+  display: block;
+  width: 360px;
+  top: 100%;
+  padding: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-out, top 0.3s;
 }
 
 .form {
@@ -101,7 +120,6 @@
   width: 100%;
   margin-top: 1rem;
 }
-
 
 .input-group input[type='checkbox'] {
   position: absolute;
