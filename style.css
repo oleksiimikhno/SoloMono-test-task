@@ -1,7 +1,3 @@
-
-.dropdown {
-  transition: transform 2s;
-}
 .dropdown .caret {
   transform: rotate(180deg);
 }
