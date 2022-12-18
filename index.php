@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
     <style type="text/css">
       body {
         padding-top: 50px;
@@ -43,7 +42,175 @@
          -webkit-box-shadow: 0 0 20px rgba(43,45,56,.06);
          box-shadow: 0 0 20px rgba(43,45,56,.06);
        }
-  </style>
+    </style>
+    <style>
+      .dropdown .caret {
+        transform: rotate(180deg);
+      }
+
+      .dropdown.open .caret {
+        transform: rotate(0deg);
+      }
+
+      .dropdown-menu li a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-clamp: 4;
+      }
+
+      .caret {
+        transition: all 0.3s;
+      }
+
+      .sub-menu {
+        display: block;
+        top: -5px;
+        left: 178px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+      }
+
+      .sub-category {
+        position: relative;
+      }
+
+      .sub-category:hover .caret{
+        transform: rotate(-90deg);
+      }
+
+      .sub-category:hover > .sub-menu {
+        display: block;
+        left: 188px;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .cabinet .dropdown-menu {
+        display: block;
+        width: 100px;
+        top: 60%;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .cabinet:hover .dropdown-menu, .cabinet.open .dropdown-menu {
+        display: block;
+        width: 360px;
+        top: 100%;
+        padding: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s ease-out, top 0.3s;
+      }
+
+      .form {
+        display: block;
+        width: 360px;
+        border: 1px solid rgb(215, 223, 224);
+        border-radius: 4px;
+        box-shadow: 1px 5px 27px 2px rgba(0,0,0,0.09);
+      }
+
+      .form .wrapper  {
+        padding: 2rem;
+      }
+
+      .form-header {
+        margin-bottom: 2rem;
+      }
+
+      .form-header a {
+        color: #4d98da;
+        font-size: 1.6rem;
+      }
+
+      .form-header a:first-child {
+        padding-bottom: 6px;
+        background-image: linear-gradient(to right, #4d98da 75%, rgba(255,255,255,0) 0%);
+        background-position: bottom;
+        background-size: 6px 2px;
+        background-repeat: repeat-x;
+        font-weight: 600;
+      }
+
+      .form-header a:first-child:hover {
+        text-decoration: none;
+      }
+
+      .form-body label{
+        width: 35%;
+        font-weight: 200;
+        color: rgb(73, 73, 73);
+      }
+
+      .form-body input {
+        border: 1px solid rgb(215, 223, 224);
+      }
+      .form-body input:focus, .form-body input:hover, .form-body input:focus-visible {
+        border: 1px solid rgb(91, 142, 219);
+      }
+
+      .form-body input[type='text'] {
+        width: 65%;
+        padding: 1rem;
+        border-radius: 10px;
+        font-weight: 700;
+      }
+
+      .form-body .input-group {
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .input-group input[type='checkbox'] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      .checkbox-group {
+        position: relative;
+        margin-top: 1rem;
+      }
+
+      .checker{
+        position: absolute;
+        top: 0;
+        right: -18px;
+        height: 18px;
+        width: 18px;
+        border-radius: 4px;
+        border: 1px solid rgb(215, 223, 224);
+        cursor: pointer;
+      }
+
+      .custom-checkbox:hover input ~ .checker {
+        border: 1px solid rgb(91, 142, 219);
+      }
+
+      .checker:after {
+        content: '';
+        position: absolute;
+        display: none;
+      }
+
+      .custom-checkbox input:checked ~ .checker:after {
+        display: block;
+      }
+
+      .custom-checkbox > .checker:after {
+        left: 5px;
+        top: 1px;
+        width: 6px;
+        height: 12px;
+        border: solid #2196F3;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+    </style>
   </head>
   <body>
 
