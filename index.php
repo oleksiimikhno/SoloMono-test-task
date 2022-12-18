@@ -149,15 +149,17 @@
 					</ul>
 					<form class="form" action="">
 						<div class="wrapper">
-							<div><a href=""><span>First Name</span> <span>Setting</span></a></div>
-							<div class="input-group">
-								<label for="">Label </label><input type="text">
-							</div>
-							<div class="input-group">
-								<label for="">Placeholder </label><input type="text">
-							</div>
-							<div class="input-group">
-								<label for="">Required </label><input type="text">
+							<div class="form-header"><a href=""><span>First Name</span></a> <a href=""><span>Settings</span></a></div>
+							<div class="form-body">
+								<div class="input-group">
+									<label for="label">Label </label><input type="text" id="label">
+								</div>
+								<div class="input-group">
+									<label for="placeholder">Placeholder </label><input type="text" id="placeholder">
+								</div>
+								<div class="input-group">
+									<label for="checkbox">Required </label><input type="checkbox" id="checkbox"/>
+								</div>
 							</div>
 						</div>
 					</form>
