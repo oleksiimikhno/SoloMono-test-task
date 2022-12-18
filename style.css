@@ -133,6 +133,7 @@
   position: relative;
   margin-top: 1rem;
 }
+
 .checker{
   position: absolute;
   top: 0;
@@ -149,7 +150,7 @@
 }
 
 .checker:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
