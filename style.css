@@ -1,0 +1,36 @@
+
+.dropdown {
+  transition: transform 2s;
+}
+.dropdown .caret {
+  transform: rotate(180deg);
+}
+
+.dropdown.open .caret {
+  transform: rotate(0deg);
+}
+
+.dropdown-menu li a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 4;
+}
+
+.sub-menu a {
+  display: inline-block;
+  width: 100%;
+}
+
+.sub-category {
+  position: relative;
+}
+
+.sub-category:hover .caret{
+  transform: rotate(-90deg);
+}
+.sub-category:hover > .sub-menu {
+  display: block;
+  top: -5px;
+  left: 188px !important ;
+  opacity: 1;
+}
