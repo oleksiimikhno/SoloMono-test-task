@@ -149,10 +149,10 @@
 					</ul>
 					<form class="form" action="">
 						<div class="wrapper">
-							<div class="form-header"><a href=""><span>First Name</span></a> <a href=""><span>Settings</span></a></div>
+							<div class="form-header"><a href=""><span>First Name</span></a> <a href="">Settings</a></div>
 							<div class="form-body">
 								<div class="input-group">
-									<label for="label">Label </label><input type="text" id="label">
+									<label for="label">Label </label><input type="text" id="label" value="First Name">
 								</div>
 								<div class="input-group">
 									<label for="placeholder">Placeholder </label><input type="text" id="placeholder">

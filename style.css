@@ -46,9 +46,9 @@
 .form {
   display: block;
   width: 360px;
-  border: 1px solid rgb(208, 221, 224);
+  border: 1px solid rgb(215, 223, 224);
   border-radius: 4px;
-  box-shadow: 1px 5px 27px 2px rgba(0,0,0,0.10);
+  box-shadow: 1px 5px 27px 2px rgba(0,0,0,0.09);
 }
 
 .form .wrapper  {
@@ -59,6 +59,36 @@
   margin-bottom: 2rem;
 }
 
-.form-body{
+.form-header a {
+  color: #4d98da;
+  font-size: 1.6rem;
+}
 
+.form-header a:first-child {
+  padding-bottom: 6px;
+  background-image: linear-gradient(to right, #4d98da 75%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 6px 2px;
+  background-repeat: repeat-x;
+  font-weight: 600;
+}
+
+.form-header a:first-child:hover {
+  text-decoration: none;
+}
+
+.form-body label{
+  width: 35%;
+  /* min-width: 110px; */
+  font-weight: 200;
+  color: rgb(73, 73, 73);
+}
+
+.form-body input[type='text'] {
+  width: 65%;
+}
+
+.form-body .input-group {
+  width: 100%;
+  margin-top: 1rem;
 }
