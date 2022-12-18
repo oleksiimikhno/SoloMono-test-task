@@ -1,0 +1,1 @@
+# SoloMono-test-task
