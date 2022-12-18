@@ -43,3 +43,11 @@
   opacity: 1;
 }
 
+.form {
+  display: block;
+  max-width: 320px;
+}
+
+.form .wrapper  {
+  padding: 1rem;
+}
