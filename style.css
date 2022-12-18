@@ -16,9 +16,17 @@
   line-clamp: 4;
 }
 
-.sub-menu a {
-  display: inline-block;
-  width: 100%;
+.caret {
+  transition: all 0.3s;
+}
+
+.sub-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  top: -5px;
+  left: 178px;
+  transition: all .3s;
 }
 
 .sub-category {
@@ -30,7 +38,8 @@
 }
 .sub-category:hover > .sub-menu {
   display: block;
-  top: -5px;
-  left: 188px !important ;
+  left: 188px;
+  visibility: visible;
   opacity: 1;
 }
+
